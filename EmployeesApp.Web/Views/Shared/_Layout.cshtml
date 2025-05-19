@@ -3,12 +3,18 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://unpkg.com/@@picocss/pico@@latest/css/pico.classless.min.css">
     <title>@ViewBag.Title</title>
 </head>
 <body>
     <nav>
-        <a asp-controller asp-action=Index></a>
-        <a></a>
+        <ul>
+            <li><strong>Employess</strong></li>
+        </ul>
+        <ul>
+            <li><a asp-controller="Employees" asp-action="Index">Home</a></li>
+            <li><a asp-controller="Employees" asp-action="Create">Create Employee</a></li>
+        </ul>
     </nav>
     <div>
         @RenderBody()
