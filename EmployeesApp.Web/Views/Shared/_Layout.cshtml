@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav>
+        <a asp-controller asp-action=Index></a>
+        <a></a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>&copy; Grupp 1 2025</footer>
+    @RenderSection("scripts", false)
+</body>
+</html>
